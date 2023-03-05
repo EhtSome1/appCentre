@@ -182,17 +182,28 @@ namespace appCentre
             tableLayoutPanel2.Visible = true;
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void toBinaryIPconvert_Click(object sender, EventArgs e)
         {
             tableLayoutPanel2.Visible = false;
             tableLayoutPanel2.Enabled = false;
             tableLayoutPanel1.Enabled = true;
             tableLayoutPanel1.Visible = true;
+        }
+
+        private void BinaaryTextButton_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel2.Visible = false;
+            tableLayoutPanel2.Enabled = false;
+            BinaryText.Enabled = true;
+            BinaryText.Visible = true;
+        }
+
+        private void binaryTextReturnButton_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel2.Visible = true;
+            tableLayoutPanel2.Enabled = true;
+            BinaryText.Enabled = false;
+            BinaryText.Visible = false;
         }
     }
 }
