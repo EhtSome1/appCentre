@@ -42,10 +42,10 @@ namespace appCentre
             this.BinaaryTextButton = new System.Windows.Forms.Button();
             this.BinaryText = new System.Windows.Forms.TableLayoutPanel();
             this.binaryTextReturnButton = new System.Windows.Forms.Button();
-            this.ToTextTextButton = new System.Windows.Forms.Button();
             this.ToBinaryTextButton = new System.Windows.Forms.Button();
             this.binaryBox = new System.Windows.Forms.TextBox();
             this.textBox = new System.Windows.Forms.TextBox();
+            this.ToTextTextButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.BinaryText.SuspendLayout();
@@ -56,7 +56,7 @@ namespace appCentre
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.85046F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.14953F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 289F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 291F));
             this.tableLayoutPanel1.Controls.Add(this.IPTextBox, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.BinaryTextBox, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.textBox1, 0, 1);
@@ -65,7 +65,7 @@ namespace appCentre
             this.tableLayoutPanel1.Controls.Add(this.ToIPButton, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.ToBinaryButton, 2, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -78,8 +78,8 @@ namespace appCentre
             // IPTextBox
             // 
             this.IPTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.IPTextBox.Location = new System.Drawing.Point(318, 213);
-            this.IPTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IPTextBox.Location = new System.Drawing.Point(317, 213);
+            this.IPTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.IPTextBox.Name = "IPTextBox";
             this.IPTextBox.Size = new System.Drawing.Size(278, 20);
             this.IPTextBox.TabIndex = 4;
@@ -88,9 +88,9 @@ namespace appCentre
             // 
             this.BinaryTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BinaryTextBox.Location = new System.Drawing.Point(2, 213);
-            this.BinaryTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BinaryTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.BinaryTextBox.Name = "BinaryTextBox";
-            this.BinaryTextBox.Size = new System.Drawing.Size(270, 20);
+            this.BinaryTextBox.Size = new System.Drawing.Size(269, 20);
             this.BinaryTextBox.TabIndex = 3;
             // 
             // textBox1
@@ -98,8 +98,8 @@ namespace appCentre
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(91, 133);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(90, 133);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -113,8 +113,8 @@ namespace appCentre
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(411, 133);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Location = new System.Drawing.Point(410, 133);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -126,7 +126,7 @@ namespace appCentre
             // binaryToIPReturnButton
             // 
             this.binaryToIPReturnButton.Location = new System.Drawing.Point(2, 2);
-            this.binaryToIPReturnButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.binaryToIPReturnButton.Margin = new System.Windows.Forms.Padding(2);
             this.binaryToIPReturnButton.Name = "binaryToIPReturnButton";
             this.binaryToIPReturnButton.Size = new System.Drawing.Size(130, 53);
             this.binaryToIPReturnButton.TabIndex = 6;
@@ -137,7 +137,7 @@ namespace appCentre
             // ToIPButton
             // 
             this.ToIPButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.ToIPButton.Location = new System.Drawing.Point(92, 270);
+            this.ToIPButton.Location = new System.Drawing.Point(91, 270);
             this.ToIPButton.Name = "ToIPButton";
             this.ToIPButton.Size = new System.Drawing.Size(90, 31);
             this.ToIPButton.TabIndex = 7;
@@ -148,7 +148,7 @@ namespace appCentre
             // ToBinaryButton
             // 
             this.ToBinaryButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.ToBinaryButton.Location = new System.Drawing.Point(409, 270);
+            this.ToBinaryButton.Location = new System.Drawing.Point(408, 270);
             this.ToBinaryButton.Name = "ToBinaryButton";
             this.ToBinaryButton.Size = new System.Drawing.Size(96, 36);
             this.ToBinaryButton.TabIndex = 8;
@@ -209,8 +209,9 @@ namespace appCentre
             this.BinaryText.Controls.Add(this.binaryBox, 0, 1);
             this.BinaryText.Controls.Add(this.textBox, 1, 1);
             this.BinaryText.Controls.Add(this.ToTextTextButton, 0, 2);
+            this.BinaryText.Enabled = false;
             this.BinaryText.Location = new System.Drawing.Point(0, 0);
-            this.BinaryText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BinaryText.Margin = new System.Windows.Forms.Padding(2);
             this.BinaryText.Name = "BinaryText";
             this.BinaryText.RowCount = 3;
             this.BinaryText.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.84674F));
@@ -218,28 +219,18 @@ namespace appCentre
             this.BinaryText.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.BinaryText.Size = new System.Drawing.Size(602, 366);
             this.BinaryText.TabIndex = 2;
+            this.BinaryText.Visible = false;
             // 
             // binaryTextReturnButton
             // 
             this.binaryTextReturnButton.Location = new System.Drawing.Point(2, 2);
-            this.binaryTextReturnButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.binaryTextReturnButton.Margin = new System.Windows.Forms.Padding(2);
             this.binaryTextReturnButton.Name = "binaryTextReturnButton";
             this.binaryTextReturnButton.Size = new System.Drawing.Size(130, 53);
             this.binaryTextReturnButton.TabIndex = 7;
             this.binaryTextReturnButton.Text = "Return";
             this.binaryTextReturnButton.UseVisualStyleBackColor = true;
             this.binaryTextReturnButton.Click += new System.EventHandler(this.binaryTextReturnButton_Click);
-            // 
-            // ToTextTextButton
-            // 
-            this.ToTextTextButton.AllowDrop = true;
-            this.ToTextTextButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.ToTextTextButton.Location = new System.Drawing.Point(113, 243);
-            this.ToTextTextButton.Name = "ToTextTextButton";
-            this.ToTextTextButton.Size = new System.Drawing.Size(74, 51);
-            this.ToTextTextButton.TabIndex = 8;
-            this.ToTextTextButton.Text = "To text";
-            this.ToTextTextButton.UseVisualStyleBackColor = true;
             // 
             // ToBinaryTextButton
             // 
@@ -259,6 +250,7 @@ namespace appCentre
             this.binaryBox.Name = "binaryBox";
             this.binaryBox.Size = new System.Drawing.Size(283, 138);
             this.binaryBox.TabIndex = 10;
+            this.binaryBox.Text = "Insert Binary (8bit)";
             // 
             // textBox
             // 
@@ -268,16 +260,29 @@ namespace appCentre
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(283, 138);
             this.textBox.TabIndex = 11;
+            this.textBox.Text = "Insert text";
+            // 
+            // ToTextTextButton
+            // 
+            this.ToTextTextButton.AllowDrop = true;
+            this.ToTextTextButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ToTextTextButton.Location = new System.Drawing.Point(113, 243);
+            this.ToTextTextButton.Name = "ToTextTextButton";
+            this.ToTextTextButton.Size = new System.Drawing.Size(74, 51);
+            this.ToTextTextButton.TabIndex = 8;
+            this.ToTextTextButton.Text = "To text";
+            this.ToTextTextButton.UseVisualStyleBackColor = true;
+            this.ToTextTextButton.Click += new System.EventHandler(this.ToTextTextButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 366);
-            this.Controls.Add(this.BinaryText);
             this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.BinaryText);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);

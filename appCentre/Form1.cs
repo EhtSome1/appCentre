@@ -22,20 +22,36 @@ namespace appCentre
         private void button1_Click(object sender, EventArgs e) //binary to IP
         {
             string[] IPnumbers = new string[4];
+            string[] binaryNumbers = new string[4];
+
+            bool a = false;
 
             string input = BinaryTextBox.Text;
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < input.Length; i++)
+            if (input[8] == '0' || input[8] == '1')
             {
-                if (i % 8 == 0)
-                    sb.Append(' ');
-                sb.Append(input[i]);
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < input.Length; i++)
+                {
+                    if (i % 8 == 0 && a)
+                        sb.Append(' ');
+                    sb.Append(input[i]);
+                    a = true;
+                }
+                string formatted = sb.ToString();
+                binaryNumbers = /*allBinaryNumbers*/formatted.Split(' ');
             }
-            string formatted = sb.ToString();
-            string[] binaryNumbers = /*allBinaryNumbers*/formatted.Split(' ');
+            else if (input[8] == '.')
+            {
+                binaryNumbers = input.Split('.');
+            }
+            else if (input[8] == ' ')
+            {
+                binaryNumbers = input.Split(' ');
+            }
+
 
             // translate
-            for(int m = 1; m < 5; m++)
+            for(int m = 0; m < 4; m++)
             {
                 int index = 0;
                 string number = binaryNumbers[m].ToString();
@@ -73,7 +89,7 @@ namespace appCentre
                     }
                 }
 
-                IPnumbers[m-1] = index.ToString();
+                IPnumbers[m] = index.ToString();
             }
             IPTextBox.Text = IPnumbers[0] + "." + IPnumbers[1] + "." + IPnumbers[2] + "." + IPnumbers[3];
         }
@@ -204,6 +220,11 @@ namespace appCentre
             tableLayoutPanel2.Enabled = true;
             BinaryText.Enabled = false;
             BinaryText.Visible = false;
+        }
+
+        private void ToTextTextButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
